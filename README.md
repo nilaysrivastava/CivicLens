@@ -49,7 +49,7 @@ The goal is simple:
 
 Local civic issues are often reported through fragmented channels such as phone calls, social media posts, WhatsApp groups, or manual complaints. These reports are difficult to verify, prioritize, assign, and track.
 
-Citizens need transparency. Civic teams need structured, evidence-backed, and department-ready cases.
+Citizens need transparency. Civic teams need structured, evidence-backed, and department ready cases.
 
 CivicLens solves this by creating an end-to-end civic action workflow from report submission to resolution verification.
 
