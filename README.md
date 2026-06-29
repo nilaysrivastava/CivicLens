@@ -22,29 +22,12 @@ Built for the **Vibe2Ship Hackathon** under the problem statement:
 <br />
 
 **Live Demo:**  
-https://ais-pre-t7pdrjdzdiu2wvlp3ycdwe-371737902526.asia-southeast1.run.app
-
-**Source Code:**  
-`<PASTE_GITHUB_REPOSITORY_LINK_HERE>`
+https://civiclens-358294234880.us-west1.run.app/
 
 **Project Description Doc:**  
-`<PASTE_GOOGLE_DOC_LINK_HERE>`
+https://docs.google.com/document/d/1thGpZsMJCLwKVrlFZOl9W8GVkMr9QdoiO4S63KGUUvw/edit?usp=sharing
 
 </div>
-
----
-
-## Preview
-
-> Add screenshots before final submission if available.
-
-| Landing Page              | Citizen Report Flow      |
-| ------------------------- | ------------------------ |
-| `screenshots/landing.png` | `screenshots/report.png` |
-
-| Civic Map             | Admin Command Center    |
-| --------------------- | ----------------------- |
-| `screenshots/map.png` | `screenshots/admin.png` |
 
 ---
 
@@ -332,7 +315,7 @@ Use this to test:
 ### 1. Clone the repository
 
 ```bash
-git clone <PASTE_GITHUB_REPOSITORY_LINK_HERE>
+git clone "github.com/nilaysrivastava/CivicLens"
 cd civiclens
 ```
 
@@ -379,80 +362,14 @@ npm start
 
 ## Deployment
 
-CivicLens is deployed using **Google AI Studio Build Mode** to **Google Cloud Run**.
-
-The production server handles:
-
-- React/Vite static asset serving
-- Express API routes
-- Gemini server-side calls
-- React Router SPA fallback
-- Nested route refresh support
+CivicLens is deployed using **Google AI Studio** to **Google Cloud**.
 
 ### Live URL
 
 ```text
-https://ais-pre-t7pdrjdzdiu2wvlp3ycdwe-371737902526.asia-southeast1.run.app
+https://civiclens-358294234880.us-west1.run.app
 ```
 
----
-
-## Deployment Notes
-
-Google AI Studio Starter Tier manages parts of the Firebase and Cloud Run deployment environment. Because some Firebase console-level settings may not be directly editable in Starter Tier, CivicLens includes deployment-safe judge access so evaluators can test both citizen and operations workflows from the published Cloud Run URL.
-
-The app still uses the real deployed frontend, backend APIs, Firestore data layer, Gemini-powered routes, and civic operations workflows.
-
----
-
-## Project Structure
-
-```text
-.
-├── src
-│   ├── components
-│   ├── context
-│   ├── lib
-│   ├── pages
-│   ├── types
-│   └── App.tsx
-│
-├── server.ts
-├── package.json
-├── vite.config.ts
-├── tailwind.config.js
-├── firebase-applet-config.json
-└── README.md
-```
-
----
-
-## Demo Flow
-
-A suggested 2-minute judging flow:
-
-1. Open the deployed CivicLens URL.
-2. Show the landing page and explain the problem.
-3. Enter the Citizen Workspace.
-4. Submit a civic report with issue type, location, description, and image proof.
-5. Open the submitted case file.
-6. Visit the public issue board and civic map.
-7. Switch to the Operations Workspace.
-8. Open the Admin Command Center.
-9. Review the case queue.
-10. Open the submitted case.
-11. Generate an escalation brief.
-12. Submit or explain resolution proof.
-13. Close with the impact: CivicLens turns local proof into verified civic action.
-
----
-
-## Known Limitations
-
-- Google AI Studio Starter Tier may restrict direct Firebase project-owner settings.
-- Firebase Storage may fall back to secure preview image handling in restricted environments.
-- AI outputs use deterministic fallback logic when Gemini is temporarily unavailable.
-- Official municipal department integrations are simulated for hackathon evaluation.
 
 ---
 
@@ -475,7 +392,7 @@ A suggested 2-minute judging flow:
 
 | Item                    | Link                                                                                             |
 | ----------------------- | ------------------------------------------------------------------------------------------------ |
-| Live Demo               | https://ais-pre-t7pdrjdzdiu2wvlp3ycdwe-371737902526.asia-southeast1.run.app                      |
+| Live Demo               | https://civiclens-358294234880.us-west1.run.app                                                  |
 | Project Description Doc | https://docs.google.com/document/d/1thGpZsMJCLwKVrlFZOl9W8GVkMr9QdoiO4S63KGUUvw/edit?usp=sharing |
 
 ---
