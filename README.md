@@ -1,6 +1,7 @@
+<div align="center">
 # CivicLens
 
-<div align="center">
+
 
 ## From local proof to verified civic action.
 
