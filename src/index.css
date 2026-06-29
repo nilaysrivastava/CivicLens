@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import "@mantine/core/styles.css";
+@import "tailwindcss";
+
+@theme {
+  --color-civic-bg: #FFFDF7;
+  --color-civic-soft-bg: #F8FAFC;
+  --color-civic-surface: #FFFFFF;
+  --color-civic-main: #101828;
+  --color-civic-muted: #667085;
+  --color-civic-primary: #2563EB;
+  --color-civic-deep: #1E40AF;
+  --color-civic-yellow: #FACC15;
+  --color-civic-soft-yellow: #FEF9C3;
+  --color-civic-red: #EF4444;
+  --color-civic-soft-red: #FEE2E2;
+  --color-civic-success: #16A34A;
+  --color-civic-border: #E5E7EB;
+
+  --font-heading: "Inter Tight", sans-serif;
+  --font-body: "Plus Jakarta Sans", sans-serif;
+  --font-accent: "Instrument Serif", serif;
+  --font-mono: "Inter Tight", monospace; /* As requested for dashboard numbers */
+}
+
+@layer base {
+  body {
+    @apply font-body text-civic-main bg-civic-bg antialiased selection:bg-civic-primary/20 selection:text-civic-deep;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading tracking-tight text-civic-main;
+  }
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+/* Subtle civic grid texture */
+.bg-civic-grid {
+  position: relative;
+}
+.bg-civic-grid::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  opacity: 0.02;
+  pointer-events: none;
+  background-image: radial-gradient(var(--color-civic-main) 0.5px, transparent 0.5px);
+  background-size: 24px 24px;
+  z-index: 0;
+}
+

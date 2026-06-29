@@ -1,0 +1,6 @@
+{
+  "name": "CivicLens",
+  "description": "An AI-powered civic issue resolution platform where citizens report hyperlocal problems with proof, and Gemini verifies the evidence.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
